@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Cuarto Ejercicio</title>
+</head>
+<body>
+    <h1>Lenguaje de Marcas</h1>
+    <script>
+        var notaPracticas = parseInt(prompt("Nota de prácticas: "));
+        var notaExamen = parseInt(prompt("Nota de examen: "));
+        var notaActitud = parseInt(prompt("Nota de actitud: "));
+
+        var notaMedia = (notaActitud+notaExamen+notaPracticas)/3;
+
+        if (notaMedia >= 5){
+            document.write("Estás aprobado, nota media: " +notaMedia);
+        }
+        else {
+            document.write("Estás suspenso, nota media: " +notaMedia);
+
+        }
+        
+        
+
+    </script>
+
+</body>
+</html>
