@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Séptimo Ejercicio</title>
+</head>
+<body>
+    <script>
+        var intentos = 3;
+        var acierto = false;
+
+        while (intentos > 0 && !acierto) {
+            var respuesta = prompt("¿Quién es el pintor de las Meninas? (Te quedan " + intentos + " intentos)");
+
+            if (respuesta !== null && respuesta.trim().toUpperCase() === "VELÁZQUEZ" || respuesta !== null && respuesta.trim().toUpperCase() === "VELAZQUEZ") {
+                acierto = true;
+            } else {
+                intentos--; 
+            }
+        }
+
+        if (acierto) {
+            alert("Correcto! Has acertado.");
+        } else {
+            alert("Lo siento! La respuesta correcta es Velázquez.");
+        }
+    </script>
+
+</body>
+</html>

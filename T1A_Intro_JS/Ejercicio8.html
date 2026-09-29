@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Octavo Ejercicio</title>
+</head>
+<body>
+    <script>
+        var saldo = 30;
+        var continuar = true;
+
+        while (saldo > 0 && saldo < 120 && continuar) {
+            
+            var apuestaNumero = parseInt(prompt("Tu saldo actual es: " + saldo + "€¿A qué número quieres apostar (1 al 6)? (Introduce 0 para salir):"));
+
+            if (apuestaNumero === 0) {
+                continuar = false;
+                break;
+            }
+
+            if (apuestaNumero >= 1 && apuestaNumero <= 6) {
+                
+                var cantidadApostada = parseInt(prompt("¿Cuánto dinero quieres apostar? (Tienes " + saldo + "€ disponibles):"));
+
+                if (cantidadApostada > 0 && cantidadApostada <= saldo) {
+                    
+                    var dado = parseInt(Math.random() * 6) + 1;
+
+                    if (apuestaNumero === dado) {
+                        saldo = saldo + 10; 
+                        alert("¡Has acertado! Salió el dado: " + dado + "Has ganado 10€ extra. Tu nuevo saldo es: " + saldo + "€");
+                    } else {
+                        saldo = saldo - cantidadApostada;
+                        alert("Lo siento, no has acertado. Salió el dado: " + dado + "Has perdido tu apuesta. Tu nuevo saldo es: " + saldo + "€");
+                    }
+
+                } else {
+                    alert("Cantidad no válida o superior a tu saldo actual. Inténtalo de nuevo.");
+                }
+
+            } else {
+                alert("Por favor, introduce un número de dado válido entre 1 y 6 (o 0 para salir).");
+            }
+        }
+
+        if (saldo >= 120) {
+            alert("¡Felicidades! Has alcanzado o superado los 120€. Saldo final: " + saldo + "€");
+        } else if (saldo <= 0) {
+            alert("Te has quedado sin saldo. Fin del juego.");
+        } else {
+            alert("Has decidido salir del juego. Te retiras con un saldo de: " + saldo + "€");
+        }
+    </script>
+
+</body>
+</html>

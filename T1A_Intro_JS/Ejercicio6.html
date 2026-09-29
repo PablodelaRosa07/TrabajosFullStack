@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Sexto Ejercicio</title>
+</head>
+<body>
+    <script>
+        var numero = parseInt(prompt("Indica un número para los niveles de encabezados: "));
+
+        if (numero > 0) {
+            
+            for (var i = 1; i <= numero; i++) {
+                document.write("<h" + i + ">Encabezado nivel " + i + "</h" + i + ">");
+            }
+            
+        } else {
+            document.write("Por favor, introduce un número válido mayor a 0.");
+        }
+    </script>
+
+</body>
+</html>

@@ -4,25 +4,22 @@
   <title>Quinto Ejercicio</title>
 </head>
 <body>
-    <h1>Lenguaje de Marcas</h1>
     <script>
-        var nombreMarcaPC = prompt("Nombre de la marca del PC: ").toUpperCase;
-        var modeloPC = prompt("Modelo del PC: ").toUpperCase;
+        // .trim() elimina los espacios antes y después del texto escrito
+        var nombreMarcaPC = prompt("Nombre de la marca del PC: ").trim().toUpperCase();
+        var modeloPC = prompt("Modelo del PC: ").trim().toUpperCase();
 
-        var precioPC = parseInt(1000)
+        var precioPC = 1000;
 
-        if (nombreMarcaPC == "MSI" && modeloPC == "PRESTIGE"){
-            document.write("Tienes descuento del 5%, precio final: " +(precioPC*0,95));
+        if (nombreMarcaPC === "MSI" && modeloPC === "PRESTIGE"){
+            document.write("Tienes descuento del 5%, precio final: " + (precioPC * 0.95));
         }
-        else if (nombreMarcaPC == "HP" && modeloPC == "PAVILION") {
-            document.write("Tienes descuento del 10%, precio final: " +(precioPC*0,90));
+        else if (nombreMarcaPC === "HP" && modeloPC === "PAVILION") {
+            document.write("Tienes descuento del 10%, precio final: " + (precioPC * 0.90));
         }
         else {
-            document.write("No hay descuento, precio final: " +precioPC);
+            document.write("No hay descuento, precio final: " + precioPC);
         }
-        
-        
-
     </script>
 
 </body>

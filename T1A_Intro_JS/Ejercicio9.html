@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Noveno Ejercicio</title>
+</head>
+<body>
+    <script>
+        var entrada = prompt("Introduce una lista de nombres separados por coma (ej: Ana, Carlos, Lucía):");
+
+        if (entrada !== null && entrada.trim() !== "") {
+            
+            var lista = entrada.split(",");
+
+            for (var l in lista) {
+                var nombre = lista[l].trim();
+                
+                if (nombre !== "") {
+                    document.write("<p>¡Hola, " + nombre + "!</p>");
+                }
+            }
+
+        } else {
+            document.write("No has introducido ningún nombre.");
+        }
+    </script>
+
+</body>
+</html>

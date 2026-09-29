@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Décimo Ejercicio</title>
+</head>
+<body>
+    <script>
+        var entrada = prompt("Introduce una lista de nombres separados por coma (ej: Carlos, Ana, Lucía):");
+
+        if (entrada !== null && entrada.trim() !== "") {
+            
+            var lista = entrada.split(",");
+            
+            var listaLimpia = [];
+            for (var l in lista) {
+                var nombreTrim = lista[l].trim();
+                if (nombreTrim !== "") {
+                    listaLimpia.push(nombreTrim);
+                }
+            }
+
+            document.write("Saludos personalizados: ");
+            for (var l in listaLimpia) {
+                document.write("¡Hola, " + listaLimpia[l] + "!");
+            }
+
+            document.write("<hr>");
+
+            document.write("Información de la lista: ");
+            document.write("Número de personas: " + listaLimpia.length);
+            document.write("Primera persona de la lista: " + listaLimpia[0]);
+            document.write("Última persona de la lista: " + listaLimpia[listaLimpia.length - 1]);
+
+           
+            var ordenAZ = listaLimpia.slice().sort();
+            var ordenZA = listaLimpia.slice().sort().reverse();
+
+            console.log("--- Array ordenado de la A a la Z ---");
+            console.log(ordenAZ);
+
+            console.log("--- Array ordenado de la Z a la A ---");
+            console.log(ordenZA);
+
+        } else {
+            document.write("<p style='color: red;'>No has introducido ningún nombre válido.</p>");
+        }
+    </script>
+
+</body>
+</html>
