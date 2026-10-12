@@ -1,0 +1,10 @@
+.oculto {
+    display: none;
+}
+
+#mostrar-mas {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    user-select: none;
+}

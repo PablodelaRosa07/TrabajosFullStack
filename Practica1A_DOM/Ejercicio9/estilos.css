@@ -1,0 +1,18 @@
+.comprado {
+    color: green;
+    font-style: italic;
+}
+
+.no-comprado {
+    color: red;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+button {
+    margin-left: 5px;
+    cursor: pointer;
+}
