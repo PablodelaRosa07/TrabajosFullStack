@@ -1,0 +1,17 @@
+"use strict";
+let position;
+let playerName;
+let finishedGame;
+let ranking;
+let hallOfRanking = [];
+position = 1;
+playerName = "Lucía";
+finishedGame = true;
+ranking = [position, playerName, finishedGame];
+hallOfRanking.push(ranking);
+position = 2;
+playerName = "Mateo";
+finishedGame = false;
+ranking = [position, playerName, finishedGame];
+hallOfRanking.push(ranking);
+console.log("Hall of Ranking:", hallOfRanking);
