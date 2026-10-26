@@ -1,0 +1,16 @@
+{
+  "name": "notas-app",
+  "version": "1.0.0",
+  "description": "Pequeño resumen de notas de una clase con Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "picocolors": "^1.1.0"
+  }
+}
