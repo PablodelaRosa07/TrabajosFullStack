@@ -8,8 +8,8 @@ async function procesarFicheros() {
     const config = JSON.parse(datos)
 
     const texto = await fs.readFile(config.entrada, 'utf8')
-    const lineas = texto.trim().split('\n').length
-    const informe = `Fichero: ${config.entrada}\nLíneas: ${lineas}\n`
+    const lineas = texto.trim().split('').length
+    const informe = `Fichero: ${config.entrada}Líneas: ${lineas}`
 
     console.log('Esperando 1 segundo antes de escribir...')
     await esperar(1000)
