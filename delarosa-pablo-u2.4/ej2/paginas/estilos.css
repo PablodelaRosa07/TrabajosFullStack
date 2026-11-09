@@ -1,0 +1,42 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f6f1f4;
+  color: #2b1d27;
+}
+
+nav {
+  background: #4f1533;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #4f1533;
+}
+
+code {
+  background: #e8dce3;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+
+a {
+  color: #8c2f5f;
+}
